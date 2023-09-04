@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   
+
+    <script>
+
+
+            //creo un numero aleatorio entre 0 y 100 y que lo redondee a entero
+            var aleatorio=Math.round(Math.random()*100);
+            var minum=0;
+            var intentos =0;
+            
+            do {
+                //creo un do, para preguntar el numero por consola
+                minum=prompt("Introduce un nº entre 0 y 100");
+                //aqui me dice que si el núm es mas alto
+                if(aleatorio>minum){
+                    //alert ("Más alto ");
+                    
+                    document.write("Más alto" + <br/>);
+                    //mensaje.value="Más alto";
+                }
+                    if(aleatorio<minum){
+                    //alert("Más bajo");
+                   document.write("Más bajo" + "<br/>");
+                   //mensaje.value="Más bajo";
+                }
+                intentos++;
+                inentos_consumidos.value=intentos;
+
+
+                }    while(aleatorio!=minum);
+                document.write ("correcto. Has consumido " + intentos + " intentos");
+            
+      
+    </script>
+</head>
+
